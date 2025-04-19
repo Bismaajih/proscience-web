@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - PROSCIENCE Training Center</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="PROSCIENCE Logo" />
+          <h1>PRO<span>SCIENCE</span></h1>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>
+          We'd love to hear from you! Reach out for inquiries, partnerships, or
+          any questions about our programs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Information</h2>
+          <p>Multiple ways to connect with our team</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+62 21 1234 5678</p>
+                <p>+62 812 3456 7890 (WhatsApp)</p>
+                <a href="tel:+622112345678" class="contact-link">Call Now</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>info@proscience.edu</p>
+                <p>training@proscience.edu</p>
+                <a href="mailto:info@proscience.edu" class="contact-link"
+                  >Email Us</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Address</h3>
+                <p>PROSCIENCE Training Center</p>
+                <p>Jl. Science No. 123</p>
+                <p>Jakarta 12345, Indonesia</p>
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  class="contact-link"
+                  >View on Map</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <h3>Connect With Us</h3>
+              <div class="social-links">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-header">
+              <h3>Send Us a Message</h3>
+              <p>
+                Fill out the form below and we'll get back to you within 24
+                hours
+              </p>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Your Phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="program">Program Information</option>
+                <option value="partnership">Partnership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-accent">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-notice">
+                <i class="fas fa-lock"></i> We'll never share your information
+                with anyone else.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613506394!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTEnNDEuMSJTIDEwNsKwNDknMTAuMyJF!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How quickly can I expect a response to my inquiry?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We typically respond to all inquiries within 24 hours during
+                business days. For urgent matters, please call our hotline
+                number.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept for training programs?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We accept bank transfers, credit/debit cards (Visa, Mastercard),
+                and several digital payment methods including OVO, GoPay, and
+                Dana.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I visit your office without an appointment?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                While walk-ins are welcome, we highly recommend scheduling an
+                appointment to ensure the appropriate team member is available
+                to assist you.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Do you offer customized training programs for organizations?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we specialize in developing tailored training solutions for
+                corporate and institutional clients. Contact our partnership
+                team to discuss your specific needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+      <div class="container">
+        <h2>Still Have Questions?</h2>
+        <p>
+          Our team is ready to help you with any questions about our programs
+          and services
+        </p>
+        <div class="cta-buttons">
+          <a href="tel:+622112345678" class="btn btn-accent">
+            <i class="fas fa-phone-alt"></i> Call Now
+          </a>
+          <a href="mailto:info@proscience.edu" class="btn">
+            <i class="fas fa-envelope"></i> Email Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>About PROSCIENCE</h3>
+            <p>
+              PROSCIENCE Training Center is dedicated to providing high-quality
+              professional development programs in scientific and technological
+              fields.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Programs</h3>
+            <ul class="footer-links">
+              <li><a href="programs.html#seminars">Seminars</a></li>
+              <li><a href="programs.html#webinars">Webinars</a></li>
+              <li><a href="programs.html#workshops">Workshops</a></li>
+              <li><a href="programs.html#certifications">Certifications</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Jl. Science No. 123, Jakarta</p>
+            </div>
+            <div class="contact-info">
+              <i class="fas fa-phone-alt"></i>
+              <p>+62 21 1234 5678</p>
+            </div>
+            <div class="contact-info">
+              <i class="fas fa-envelope"></i>
+              <p>info@proscience.edu</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 PROSCIENCE Training Center. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

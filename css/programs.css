@@ -1,0 +1,264 @@
+/* Programs Page Specific Styles */
+.programs-hero {
+  background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+    url("../images/programs-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  margin-top: 80px;
+}
+
+.programs-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.programs-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.programs-nav {
+  background: var(--primary);
+  padding: 15px 0;
+  position: sticky;
+  top: 80px;
+  z-index: 900;
+}
+
+.program-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.program-tab {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.program-tab:hover,
+.program-tab.active {
+  background: var(--secondary);
+  color: white;
+}
+
+.program-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.program-section.alt {
+  background: var(--light);
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--secondary);
+}
+
+.section-description {
+  display: flex;
+  gap: 40px;
+}
+
+.section-description p {
+  flex: 2;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.program-features {
+  flex: 1;
+  background: rgba(52, 152, 219, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.program-features h4 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.program-features ul {
+  list-style: none;
+}
+
+.program-features li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.program-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.program-gallery h3 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.gallery-overlay p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.programs-cta {
+  background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(52, 152, 219, 0.9)),
+    url("../images/cta-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.programs-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.programs-cta p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .section-description {
+    flex-direction: column;
+  }
+
+  .program-features {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-hero {
+    padding: 80px 0;
+  }
+
+  .programs-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .program-tabs {
+    flex-wrap: wrap;
+  }
+
+  .program-section {
+    padding: 60px 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .programs-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    height: 250px;
+  }
+}

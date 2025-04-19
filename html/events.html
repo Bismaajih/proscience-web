@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming Events - PROSCIENCE Training Center</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/event.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="/img/logo.png" alt="PROSCIENCE Logo" />
+          <h1>PRO<span>SCIENCE</span></h1>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Events Hero -->
+    <section class="events-hero">
+      <div class="container">
+        <h1>Upcoming Events</h1>
+        <p>
+          Join our professional development programs and advance your career
+        </p>
+        <div class="event-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Events
+          </button>
+          <button class="filter-btn" data-filter="seminar">Seminars</button>
+          <button class="filter-btn" data-filter="webinar">Webinars</button>
+          <button class="filter-btn" data-filter="workshop">Workshops</button>
+          <button class="filter-btn" data-filter="certification">
+            Certifications
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+      <div class="container">
+        <div class="events-grid">
+          <!-- Event 1 -->
+          <div class="event-card" data-category="seminar">
+            <div class="event-badge">Seminar</div>
+            <div class="event-image">
+              <img
+                src="images/event1.jpg"
+                alt="Advanced Biotechnology Seminar"
+              />
+              <div class="event-countdown">
+                <span class="countdown-days">00</span>d
+                <span class="countdown-hours">00</span>h
+                <span class="countdown-minutes">00</span>m
+              </div>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>June 15-17, 2023</span>
+              </div>
+              <h3>Advanced Biotechnology Seminar</h3>
+              <div class="event-meta">
+                <div class="event-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>PROSCIENCE Training Center, Jakarta</span>
+                </div>
+                <div class="event-time">
+                  <i class="far fa-clock"></i>
+                  <span>09:00 - 16:00 WIB</span>
+                </div>
+              </div>
+              <p>
+                Explore the latest advancements in biotechnology with industry
+                experts. This seminar will cover cutting-edge research and
+                applications.
+              </p>
+              <div class="event-footer">
+                <div class="event-price">IDR 1,500,000</div>
+                <a href="#" class="btn btn-accent">Register Now</a>
+              </div>
+            </div>
+            <div
+              class="event-countdown-data"
+              data-date="2023-06-15T09:00:00"
+            ></div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="event-card" data-category="webinar">
+            <div class="event-badge">Webinar</div>
+            <div class="event-image">
+              <img
+                src="images/event2.jpg"
+                alt="Science Communication Webinar"
+              />
+              <div class="event-countdown">
+                <span class="countdown-days">00</span>d
+                <span class="countdown-hours">00</span>h
+                <span class="countdown-minutes">00</span>m
+              </div>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>July 5, 2023</span>
+              </div>
+              <h3>Science Communication Webinar</h3>
+              <div class="event-meta">
+                <div class="event-location">
+                  <i class="fas fa-globe"></i>
+                  <span>Online Event</span>
+                </div>
+                <div class="event-time">
+                  <i class="far fa-clock"></i>
+                  <span>14:00 - 16:00 WIB</span>
+                </div>
+              </div>
+              <p>
+                Learn how to effectively communicate complex scientific concepts
+                to diverse audiences in this interactive webinar.
+              </p>
+              <div class="event-footer">
+                <div class="event-price">FREE</div>
+                <a href="#" class="btn btn-accent">Register Now</a>
+              </div>
+            </div>
+            <div
+              class="event-countdown-data"
+              data-date="2023-07-05T14:00:00"
+            ></div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="event-card" data-category="workshop">
+            <div class="event-badge">Workshop</div>
+            <div class="event-image">
+              <img
+                src="images/event3.jpg"
+                alt="Laboratory Techniques Workshop"
+              />
+              <div class="event-countdown">
+                <span class="countdown-days">00</span>d
+                <span class="countdown-hours">00</span>h
+                <span class="countdown-minutes">00</span>m
+              </div>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>August 10-12, 2023</span>
+              </div>
+              <h3>Advanced Laboratory Techniques Workshop</h3>
+              <div class="event-meta">
+                <div class="event-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>University of Indonesia, Depok</span>
+                </div>
+                <div class="event-time">
+                  <i class="far fa-clock"></i>
+                  <span>08:30 - 17:00 WIB</span>
+                </div>
+              </div>
+              <p>
+                Hands-on training for modern laboratory techniques with
+                practical sessions and expert guidance.
+              </p>
+              <div class="event-footer">
+                <div class="event-price">IDR 2,750,000</div>
+                <a href="#" class="btn btn-accent">Register Now</a>
+              </div>
+            </div>
+            <div
+              class="event-countdown-data"
+              data-date="2023-08-10T08:30:00"
+            ></div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="event-card" data-category="certification">
+            <div class="event-badge">Certification</div>
+            <div class="event-image">
+              <img src="images/event4.jpg" alt="Lab Safety Certification" />
+              <div class="event-countdown">
+                <span class="countdown-days">00</span>d
+                <span class="countdown-hours">00</span>h
+                <span class="countdown-minutes">00</span>m
+              </div>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>September 5-7, 2023</span>
+              </div>
+              <h3>Laboratory Safety Certification Program</h3>
+              <div class="event-meta">
+                <div class="event-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>PROSCIENCE Training Center, Jakarta</span>
+                </div>
+                <div class="event-time">
+                  <i class="far fa-clock"></i>
+                  <span>09:00 - 16:00 WIB</span>
+                </div>
+              </div>
+              <p>
+                Comprehensive training on laboratory safety protocols with
+                certification exam. Meets international standards.
+              </p>
+              <div class="event-footer">
+                <div class="event-price">IDR 3,500,000</div>
+                <a href="#" class="btn btn-accent">Register Now</a>
+              </div>
+            </div>
+            <div
+              class="event-countdown-data"
+              data-date="2023-09-05T09:00:00"
+            ></div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="event-card" data-category="seminar">
+            <div class="event-badge">Seminar</div>
+            <div class="event-image">
+              <img src="images/event5.jpg" alt="Data Science Seminar" />
+              <div class="event-countdown">
+                <span class="countdown-days">00</span>d
+                <span class="countdown-hours">00</span>h
+                <span class="countdown-minutes">00</span>m
+              </div>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>October 12, 2023</span>
+              </div>
+              <h3>Data Science in Research Seminar</h3>
+              <div class="event-meta">
+                <div class="event-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>PROSCIENCE Training Center, Jakarta</span>
+                </div>
+                <div class="event-time">
+                  <i class="far fa-clock"></i>
+                  <span>10:00 - 15:00 WIB</span>
+                </div>
+              </div>
+              <p>
+                Learn how to apply data science techniques to enhance your
+                research methodology and analysis.
+              </p>
+              <div class="event-footer">
+                <div class="event-price">IDR 1,200,000</div>
+                <a href="#" class="btn btn-accent">Register Now</a>
+              </div>
+            </div>
+            <div
+              class="event-countdown-data"
+              data-date="2023-10-12T10:00:00"
+            ></div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="event-card" data-category="webinar">
+            <div class="event-badge">Webinar</div>
+            <div class="event-image">
+              <img src="images/event6.jpg" alt="Bioethics Webinar" />
+              <div class="event-countdown">
+                <span class="countdown-days">00</span>d
+                <span class="countdown-hours">00</span>h
+                <span class="countdown-minutes">00</span>m
+              </div>
+            </div>
+            <div class="event-details">
+              <div class="event-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>November 8, 2023</span>
+              </div>
+              <h3>Bioethics in Modern Research Webinar</h3>
+              <div class="event-meta">
+                <div class="event-location">
+                  <i class="fas fa-globe"></i>
+                  <span>Online Event</span>
+                </div>
+                <div class="event-time">
+                  <i class="far fa-clock"></i>
+                  <span>13:00 - 15:30 WIB</span>
+                </div>
+              </div>
+              <p>
+                Exploring ethical considerations in contemporary biological and
+                medical research.
+              </p>
+              <div class="event-footer">
+                <div class="event-price">FREE</div>
+                <a href="#" class="btn btn-accent">Register Now</a>
+              </div>
+            </div>
+            <div
+              class="event-countdown-data"
+              data-date="2023-11-08T13:00:00"
+            ></div>
+          </div>
+        </div>
+
+        <div class="events-cta">
+          <p>
+            Don't see what you're looking for? We can create custom programs for
+            your organization.
+          </p>
+          <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>About PROSCIENCE</h3>
+            <p>
+              PROSCIENCE Training Center is dedicated to providing high-quality
+              professional development programs in scientific and technological
+              fields.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Programs</h3>
+            <ul class="footer-links">
+              <li><a href="programs.html#seminars">Seminars</a></li>
+              <li><a href="programs.html#webinars">Webinars</a></li>
+              <li><a href="programs.html#workshops">Workshops</a></li>
+              <li><a href="programs.html#certifications">Certifications</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Jl. Science No. 123, Jakarta</p>
+            </div>
+            <div class="contact-info">
+              <i class="fas fa-phone-alt"></i>
+              <p>+62 21 1234 5678</p>
+            </div>
+            <div class="contact-info">
+              <i class="fas fa-envelope"></i>
+              <p>info@proscience.edu</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 PROSCIENCE Training Center. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
